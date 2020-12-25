@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        backDay()
+        function backDay() {
+            var year = prompt("请输入年份")
+
+            if (myfunction(year)) {
+                alert("是闰年")
+            }
+            else {
+                alert("不是闰年")
+            }
+        }  
+
+
+        function myfunction(a) {
+            if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
+                return true
+            }
+            return false
+        }
+        // var re = myfunction(1999)                     
+        // alert(re)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
